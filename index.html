@@ -5,30 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <title>Projet Bootstrap</title>
+    <!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- fonts -->
+    <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-    <title>EmploiFacile</title>
+
 </head>
 
 <body>
 
     <!-- Nav -->
+
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="main-nav">
         <div class="container">
             <a href="index.html" class="navbar-brand">EmploiFacile</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse " id="navbarCollapse">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mr-1">
-                        <a href="#main-nav" class="nav-link text-lg">Accueil</a>
+                        <a href="#top" class="nav-link">Accueil</a>
                     </li>
                     <li class="nav-item mr-1">
                         <a href="#info" class="nav-link">Concept</a>
@@ -36,7 +41,7 @@
                     <li class="nav-item mr-1">
                         <a href="#clients" class="nav-link">Nos Clients</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mr-1">
                         <a href="#newsletter" class="nav-link">Newsletter</a>
                     </li>
                 </ul>
@@ -44,11 +49,12 @@
         </div>
     </nav>
 
-    <!-- Header image + Titre et boutons -->
-    <header class="text-center">
+    <!-- Header, accueil grande image -->
+
+    <header class="text-center" id="top">
 
         <div class="text-intro">
-            <!-- preTxt est une custom class -->
+
             <div class="preTxt text-white font-italic">Décrochez le Job de vos rêves</div>
             <h1>
                 Sur EmploiFacile
@@ -59,79 +65,81 @@
 
     </header>
 
-    <!-- Laptop -->
+    <!-- Section Info -->
+
     <section id="info" class="py-5">
         <div class="container">
             <div class="row">
-                <!-- txt laptop pour medias -->
                 <div id="txtLaptop" class="col-md-6 align-self-center">
                     <h3>Lorem Ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eveniet blanditiis incidunt
-                        iusto corrupti illum
-                        cum laudantium ex sequi amet.</p>
-                    <a href="about.html" class="btn btn-outline-danger ">Découvrir</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium corrupti temporibus in
+                        expedita tempore quod cumque rem eos pariatur, nesciunt, odit explicabo iure.</p>
+                    <a href="#" class="btn btn-outline-danger">Découvrir</a>
                 </div>
                 <div class="col-md-6">
-                    <img src="img/laptop.png" alt="" class="img-fluid">
+                    <img src="img/laptop.png" alt="ordinateur" class="img-fluid">
                 </div>
             </div>
         </div>
     </section>
 
 
-    <!--HOME ICON SECTION  -->
+
+    <!-- Section 3 Icônes -->
+
     <section id="home-icons">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-4 text-center">
                     <i class="fas fa-cog fa-3x mb-2"></i>
                     <h3>Outils Performants</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio obcaecati atque soluta unde itaque
-                        alias ex delectus minima doloremque sunt!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatem, natus quis ullam
+                        molestias voluptatum consectetur nemo ipsum dolorem porro officia quod, aliquid deleniti fugiat!
+                    </p>
                 </div>
                 <div class="col-md-4 mb-4 text-center">
                     <i class="fas fa-cloud fa-3x mb-2"></i>
                     <h3>Données utiles</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio obcaecati atque soluta unde itaque
-                        alias ex delectus minima doloremque sunt!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatem, natus quis ullam
+                        molestias voluptatum consectetur nemo ipsum dolorem porro officia quod, aliquid deleniti fugiat!
+                    </p>
                 </div>
                 <div class="col-md-4 mb-4 text-center">
                     <i class="fas fa-cart-plus fa-3x mb-2"></i>
                     <h3>Gagnez de l'argent</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio obcaecati atque soluta unde itaque
-                        alias ex delectus minima doloremque sunt!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatem, natus quis ullam
+                        molestias voluptatum consectetur nemo ipsum dolorem porro officia quod, aliquid deleniti fugiat!
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Commencer -->
-    <section id="start" class="pt-5 pb-5">
-        <div class="dark-overlay">
 
-            <div class="container pt-5 pb-5">
-                <h3 class="pb-3">Etes-vous prêt à commencer ?</h3>
-                <!-- disparait à md -->
-                <p class="d-none d-md-block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est eaque
-                    magni sit dolores. </p>
-                <a href="#" class="btn btn-primary">Démarrez maitenant</a>
 
-            </div>
+    <!-- Call to Action -->
+    <section id="start" class="py-5">
+        <div class="container py-5">
+            <h2 class="pb-3">Etes-vous prêt à commencer?</h2>
+            <p class="d-none d-md-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam vel distinctio
+                soluta nihil. Odio, quibusdam.</p>
+            <a href="#" class="btn btn-primary">Démarrez Maintenant</a>
         </div>
     </section>
 
+
     <!-- Section Clients -->
+
+
     <section id="clients" class="my-5 text-center">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <div class="info-header mb-5">
-                        <h2 class="pb-3">
-                            Nos Clients
-                        </h2>
+                        <h2 class="pb-3">Nos Clients</h2>
                         <p class="lead pb-5">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laborum numquam aperiam
-                            dolores a porro!
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, omnis nostrum illum
+                            maiores excepturi magni?
                         </p>
                     </div>
                 </div>
@@ -141,12 +149,11 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="card">
                         <div class="card-body">
-                            <img src="img/visage1.jpg" alt="visage"
-                                class="img-fluid rounded-circle w-50 mb-3">
+                            <img src="img/visage1.jpg" alt="visage" class="img-fluid rounded-circle w-50 mb-3">
                             <h3>Tom</h3>
                             <h5 class="text-muted">Développeur</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi nostrum, ab libero
-                                voluptas officia.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa fugiat fugit dolore
+                                consequuntur, iusto delectus minus ex.</p>
                             <div class="d-flex justify-content-center">
                                 <div class="p-4">
                                     <a href="http://facebook.com">
@@ -163,21 +170,22 @@
                                         <i class="fab fa-instagram"></i>
                                     </a>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
 
+
+
+
                 <div class="col-lg-3 col-md-6">
                     <div class="card">
                         <div class="card-body">
-                            <img src="img/visage2.png" alt="visage"
-                                class="img-fluid rounded-circle w-50 mb-3">
+                            <img src="img/visage2.png" alt="visage" class="img-fluid rounded-circle w-50 mb-3">
                             <h3>Nick</h3>
                             <h5 class="text-muted">Marketing</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi nostrum, ab libero
-                                voluptas officia.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa fugiat fugit dolore
+                                consequuntur, iusto delectus minus ex.</p>
                             <div class="d-flex justify-content-center">
                                 <div class="p-4">
                                     <a href="http://facebook.com">
@@ -194,21 +202,22 @@
                                         <i class="fab fa-instagram"></i>
                                     </a>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
 
+
+
+
                 <div class="col-lg-3 col-md-6">
                     <div class="card">
                         <div class="card-body">
-                            <img src="img/visage3.png" alt="visage"
-                                class="img-fluid rounded-circle w-50 mb-3">
+                            <img src="img/visage3.png" alt="visage" class="img-fluid rounded-circle w-50 mb-3">
                             <h3>John</h3>
                             <h5 class="text-muted">Développeur</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi nostrum, ab libero
-                                voluptas officia.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa fugiat fugit dolore
+                                consequuntur, iusto delectus minus ex.</p>
                             <div class="d-flex justify-content-center">
                                 <div class="p-4">
                                     <a href="http://facebook.com">
@@ -225,21 +234,22 @@
                                         <i class="fab fa-instagram"></i>
                                     </a>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+
 
                 <div class="col-lg-3 col-md-6">
                     <div class="card">
                         <div class="card-body">
-                            <img src="img/visage4.png" alt="visage"
-                                class="img-fluid rounded-circle w-50 mb-3">
+                            <img src="img/visage4.png" alt="visage" class="img-fluid rounded-circle w-50 mb-3">
                             <h3>Susan</h3>
                             <h5 class="text-muted">Web-Design</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi nostrum, ab libero
-                                voluptas officia.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa fugiat fugit dolore
+                                consequuntur, iusto delectus minus ex.</p>
                             <div class="d-flex justify-content-center">
                                 <div class="p-4">
                                     <a href="http://facebook.com">
@@ -256,58 +266,77 @@
                                         <i class="fab fa-instagram"></i>
                                     </a>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
-    <!-- NEWSLETTER -->
+
+    <!-- Newsletter -->
+
     <section id="newsletter" class="text-center p-5 bg-dark text-white">
+
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h3>Sign Up For Our Newsletter</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio asperiores consectetur, quae
-                        ducimus voluptates
-                        vero repellendus architecto maiores recusandae mollitia?</p>
+                    <h3>Abonnez-vous à la Newsletter</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ratione odit recusandae
+                        consequuntur aliquam reiciendis unde repellendus molestiae deleniti esse!</p>
                     <form class="form-inline justify-content-center">
                         <input type="text" class="form-control mb-2 mr-2" placeholder="Nom">
                         <input type="text" class="form-control mb-2 mr-2" placeholder="Email">
-                        <button class="btn btn-primary mb-2">Submit</button>
+                        <button class="btn btn-primary mb-2">Soumettre</button>
                     </form>
                 </div>
             </div>
         </div>
+
     </section>
 
-    <!-- FOOTER -->
+    <!-- Footer -->
+
     <footer id="main-footer" class="text-center p-4">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <p>Copyright &copy;
-                        <span id="year"></span> EmploiFacile</p>
+                        <span id="year"></span> EmploiFacile
+                    </p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts Js / Jquery -->
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+
+
+
+
+
+    <!-- Script Jquery  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <script>
-        // Get the current year for the copyright
-        $('#year').text(new Date().getFullYear());
-        // ScrollSpy
-        $('body').scrollspy({ target: '#main-nav' });
-    </script>
+    <!-- Javascript de Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+     <script>
+     
+     // Générer Date
+     $('#year').text(new Date().getFullYear());
+
+    // ScrollSpy
+    $('body').scrollspy({target: '#main-nav'});
+
+     </script>
 </body>
+
+</html>
