@@ -47,14 +47,6 @@ font-weight: 700;
     padding-bottom: 100px;
     border-top: 1px solid black;
 }
-/* Clients */
-#clients img {
-    margin-top: -50px; }
-
-.fab {
-    font-size: 25px;
-    color: #003366;
-}
 
 
 /* Parallax */
@@ -71,6 +63,21 @@ font-weight: 700;
     color: #fff;
   }
   
+#start h2 {
+    font-size: 40px;
+    color: #f1f1f1;
+}
+
+
+/* Clients */
+#clients img {
+    margin-top: -50px; }
+
+.fab {
+    font-size: 25px;
+    color: #003366;
+}
+
 
   /*  Media Queries */
 
