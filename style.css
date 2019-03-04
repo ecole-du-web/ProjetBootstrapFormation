@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: #f1f1f1;
+}
+
+/* Nav */
+.navbar-brand {
+    font-size: 25px;
+    font-family: 'kaushan Script'
+}
+
+#navbarCollapse a {
+    font-size:  20px;
+}
+
+
+/* Header */
+
+header {
+ 
+    background: url("img/headerImg.jpg");
+    background-size: cover;
+    height: 80vh;
+   
+}
+.text-intro {
+    padding-top: 300px;
+    padding-bottom: 200px;
+
+}
+.preTxt {
+    font-size: 40px;
+    font-style: italic;
+    color: #fff;   
+}
+h1 {
+  font-size: 90px;
+color: #fff;
+font-family:  Sans-serif;
+font-weight: 700;
+}
+
+/* Trois icones */
+
+#home-icons{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-top: 1px solid black;
+}
+/* Clients */
+#clients img {
+    margin-top: -50px; }
+
+.fab {
+    font-size: 25px;
+    color: #003366;
+}
+
+
+/* Parallax */
+
+
+#start {
+    position: relative;
+    min-height: 200px;
+    background: url('img/start.jpeg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* pour tout centrer dont le btn ;) */
+    text-align: center;
+    color: #fff;
+  }
+  
+
+  /*  Media Queries */
+
+@media screen and (max-width: 768px) {
+
+    header {
+ 
+  /* on réduit le header img */
+        height: 60vh;
+    
+    }
+    .text-intro {
+        /* on réduit l'écart de 100px avec le haut donc
+        ça remonte  */
+        padding-top: 200px;
+        
+    }
+    /* on réduit la taille des txt */
+    .preTxt {
+        font-size: 30px;
+    }
+    h1 {
+      font-size: 60px;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+
+    .preTxt {
+        font-size: 20px;
+    }
+    h1 {
+      font-size: 39px;
+    }
+/* on reduit un peu le bouton aussi */
+.text-intro a {
+transform: scale(0.8);
+}
+/* reduction du bas padding */
+#home-icons{
+    padding-top: 80px;
+    padding-bottom: 60px;
+
+}
+/* léger padding pour respirer */
+#txtLaptop {
+    padding-bottom: 30px;
+}
+}
